@@ -1,0 +1,332 @@
+@keyframes fadeInDown {
+    0% {
+        -webkit-transform: translate3d(0, -10%, 0);
+        transform: translate3d(0, -10%, 0);
+    }
+
+    to {
+    	
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+    }
+}
+
+* {
+	font-family: 'Open Sans', sans-serif;
+}
+
+body {
+	background-color: #191e2f !important;
+	width: 100%;
+	margin: 0;
+}
+
+.header {
+	width: 90%;
+	height: 75px;
+	background-color: #111521;
+	padding: 0 5% 0 5%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	transform: translateY(-5%);
+	border-bottom: 1px solid black;
+}
+
+.header a, .header-a {
+	text-decoration: none;
+	font-size: 25px;
+	font-weight: 600;
+	color: lightgray;
+	margin: 15px;
+}
+
+.header a:hover, .header-a:hover {
+	color: gray;
+}
+
+.main {
+	margin-top: 125px;
+	display: flex;
+	justify-content: center;
+	width: auto;
+}
+
+label {
+	font-size: 25px;
+	font-weight: 600;
+	color: lightgray;
+	margin: 15px;
+}
+
+.authorization input {
+	border-radius: 10px;
+	width: 200px;
+	height: 50px;
+	padding: 0 20px;
+	background-color: #111521;
+	border: 1px solid black;
+	margin-top: 15px;
+	color: lightgray;
+	font-weight: 900;
+}
+
+#submit {
+	width: 245px !important;
+}
+
+#submit:hover {
+	cursor: pointer;
+}
+
+#submit:active {
+	border: 1px solid gray;
+}
+
+form {
+	margin-top: 100px !important;
+	text-align: center;
+}
+
+/*.nav-bar {
+	margin-left: 192px;
+}*/
+
+.log-status {
+	margin-right: 50px;
+}
+
+/* input:active {
+	border: 1px solid black;
+} */
+
+
+
+.case-block {
+	display: inline-block;
+	text-align: center;
+    font-size: 20px;
+	color: lightgray;
+	width: 242px;
+	height: 275px;
+	padding-top: 30px;
+	text-decoration: none;
+}
+
+
+.case-block img {
+	height: 150px;
+}
+
+.case-block-content {
+	position: relative;
+	z-index: 1;
+}
+
+.case-price {
+	color: lightgray;
+    font-weight: 600;
+    font-size: 25px;
+    margin-top: 25px;
+}
+
+.case-block:hover .case-bg {
+	box-shadow: 0 15px 25px 5px #111521;
+	border-top: 4px solid #111521;
+    background: linear-gradient(rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.2));
+	animation: fadeInDown 0.25s ease-out;
+	border-radius: 10px;
+}
+
+.case-bg {
+	margin-top: -310px;
+	background-color: rgba(0,0,0,0);
+	position: absolute;
+	width: 242px;
+	height: 325px;
+	border: 0;
+	z-index: -1;
+}
+
+.buycase-submit {
+	margin-top: -34px;
+	margin-left: -24px;
+	background-color: rgba(0,0,0,0);
+	position: absolute;
+	width: 242px;
+	height: 325px;
+	border: 0;
+	z-index: 0;
+}
+
+.buycase-form {
+	margin-top: 0;
+	display: inline-block;
+}
+
+.buycase-submit:hover {
+	cursor: pointer;
+}
+
+.roulette-btn {
+	position: absolute;
+	top: calc(50% + 240px);
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border-radius: 10px;
+	width: 245px;
+	height: 50px;
+	padding: 0 20px;
+	background-color: #111521;
+	border: 1px solid black;
+	color: lightgray;
+	font-weight: 900;
+}
+
+.roulette-btn:hover {
+	cursor: pointer;
+}
+
+.roulette-btn:active {
+	border: 1px solid gray;
+}
+
+.roulette-main {
+	border-radius: 10px;
+	position: absolute;
+	overflow: hidden;
+	top: calc(50% + 115px);
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 500px;
+	height: 100px;
+	border-radius: 10px;
+	background-color: #111521;
+	border: 1px solid black;
+}
+
+.slots {
+	position: relative;
+	width: 25000px;
+	height: 100px;
+	margin-left: 20px;
+}
+
+.slots-prize {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	height: 80px;
+	width: 100px;
+	display: inline-block;
+	background: #191e2f;
+	border: 1px solid black;
+	border-radius: 10px;
+	color: lightgray;
+	font-weight: 900;
+	text-align: center;
+	margin-right: 5px;
+}
+
+.slots-prize-text {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	margin: 0;
+}
+
+.result {
+	
+	position: absolute;
+	z-index: 1;
+	top: calc(50% - 50px);
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border: 35px solid  transparent;
+	border-top: 70px solid #191e2f;
+	filter: drop-shadow(0 2px 0 black);
+}
+
+
+
+
+
+
+
+
+
+/* The Modal (background) */
+.modal {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0,0,0); /* Fallback color */
+	background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+  
+  /* Modal Content/Box */
+.modal-content {
+	background-color: #191e2f;
+	margin: 15% auto; /* 15% from the top and centered */
+	padding: 20px;
+	border: 1px solid black;
+	width: 20%; /* Could be more or less, depending on screen size */
+	color: lightgray;
+	font-weight: 900;
+	animation: fadeInDown 0.25s ease-out;	
+}
+
+  /* The Close Button */
+.close {
+	color: lightgray;
+	font-weight: 900;
+	float: right;
+	font-size: 28px;
+}
+  
+.close:hover, .close:focus {
+	color: gray;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+.file-upload input[type="file"] {
+	position: absolute;
+    opacity: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	top: calc(50%-160px);
+	width: 200px;
+	height: 50px;
+	border-radius: 10px;
+	
+}
+	
+
+.file-upload {
+	
+	width: 200px;
+	height: 50px;
+	border-radius: 10px;
+	background-color: #111521;
+	border: 1px solid black;
+	color: lightgray;
+	font-weight: 900;
+	font-size: 13px;
+	overflow: hidden;
+	margin: 0;
+}
