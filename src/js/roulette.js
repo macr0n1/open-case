@@ -38,17 +38,18 @@ function start() {
 
       randomtarget+=2;
       var targetvalue = renderedprizes[randomtarget];
+      console.log(targetvalue);
 
-      $.ajax({
-        url:      "handler.php", //url страницы (action_ajax_form.php)
-        type:     "POST", //метод отправки
-        dataType: "html",
-        data:     {"targetvalue":targetvalue},  // Сеарилизуем объект
-        success: function(response) {
-          alert(response);
-          window.open("handler.php");
-        }
-      });
+      // $.ajax({
+      //   url:      "handler.php", //url страницы (action_ajax_form.php)
+      //   type:     "POST", //метод отправки
+      //   dataType: "html",
+      //   data:     {"targetvalue":targetvalue},  // Сеарилизуем объект
+      //   success: function(response) {
+      //     alert(response);
+      //     window.open("handler.php");
+      //   }
+      // });
 
       btn.disabled = true;
       btn.style.color = "gray";
